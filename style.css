@@ -457,9 +457,19 @@ ul.our-primary-menu li ul li a:hover{
     background-color: #e73a3e;
 }
 .call-to-action-bg h2 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
-    border-right: 1px solid #ddd;
+    position: relative;
+    color: #fff;
+}
+.call-to-action-bg h2::before {
+	content: "";
+	position: absolute;
+	right: -20px;
+	top: 0%;
+	width: 1px;
+	height: 100%;
+	background-color: #ddd;
 }
 .call-to-action-bg {
     background-color: #e73a3e;
@@ -480,17 +490,18 @@ ul.our-primary-menu li ul li a:hover{
 	border-radius: 50%;
 	text-align: center;
 	line-height: 60px;
-	margin-right: 30px;
+	margin: 0 20px;
 }
 .call-to-action-phone a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 43px;
+    font-size: 36px;
 }
 .call-to-action-phone {
     margin-top: 18px;
 }
+
 
 /*  Our Comapny Values Section  */
 .company-values-text{}
